@@ -1,0 +1,29 @@
+src/setParentWindow.c:37:25: style: Variable 'childWindowWidth' is assigned a value that is never used. [unreadVariable]
+  int childWindowWidth  = width;
+                        ^
+src/setParentWindow.c:38:25: style: Variable 'childWindowHeight' is assigned a value that is never used. [unreadVariable]
+  int childWindowHeight = height;
+                        ^
+src/setParentWindow.c:73:25: style: Variable 'childWindowWidth' is assigned a value that is never used. [unreadVariable]
+      childWindowWidth  =  width > pw ? pw : width ;
+                        ^
+src/setParentWindow.c:75:25: style: Variable 'childWindowWidth' is assigned a value that is never used. [unreadVariable]
+      childWindowWidth  = gterWindowWidth;
+                        ^
+src/setParentWindow.c:78:25: style: Variable 'childWindowHeight' is assigned a value that is never used. [unreadVariable]
+      childWindowHeight = height > ph ? ph : height;
+                        ^
+src/setParentWindow.c:80:25: style: Variable 'childWindowHeight' is assigned a value that is never used. [unreadVariable]
+      childWindowHeight = gterWindowHeight;
+                        ^
+src/setParentWindow.c:89:29: style: Variable 'col' is assigned a value that is never used. [unreadVariable]
+      if ( col > cols ) col = 0;
+                            ^
+src/setParentWindow.c:91:22: style: Variable 'colWidth' is assigned a value that is never used. [unreadVariable]
+      float colWidth = pw / cols;
+                     ^
+src/setParentWindow.c:33:0: style: The function 'XCreateWindow' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
+
